@@ -1,0 +1,12 @@
+<hr>
+<div>
+  <input
+    #filter
+    matInput
+    type="text"
+    maxlength="10"
+    (keyup.enter)="updateFilter(filter.value)"
+    (keydown.Tab)="updateFilter(filter.value)"
+    (focusout)="updateFilter(filter.value)"
+  />
+</div>
